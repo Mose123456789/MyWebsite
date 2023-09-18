@@ -31,12 +31,12 @@ html, body {
 
 }
 
-btn-transparent {
+.btn-transparent {
     background-color: transparent;
     border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 12px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -159,23 +159,22 @@ header {
                         }
                     }
                 }
-            .btn-login {
-                padding-top: 12px;
-                padding-bottom: 12;
-            }
 
+                .btn-login {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
             }
         }
     }
 }
 
 .showcase {
-
+    background-color: #F0EFE9;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         .content {
             padding-top: 40px;
             padding-bottom: 40px;
@@ -183,21 +182,21 @@ header {
 
             @media (min-width: 1200px) {
                 text-align: left;
-                
             }
-
-
+            
             h1 {
-                font-family: 'DM Sans', sans-serif;
+                font-family: "DM Sans", sans-serif;
                 font-weight: 700;
                 font-size: 40px;
+                text-align: center;
 
-                @media (min-width: 768px) {
+                @media (min-width:768px ) {
                     font-size: 70px;
+                }
 
                 @media (min-width: 1400px) {
                     font-size: 86px;
-
+                }
             }
 
             p {
@@ -207,11 +206,11 @@ header {
                 padding-left: 10px;
                 padding-right: 10px;
 
-                @media (min-width: 768px) {
+                @media (min-width:768px ) {
                     font-size: 20px;
                     padding-left: 0;
                     padding-right: 0;
-
+                }
             }
 
             a {
@@ -219,12 +218,11 @@ header {
                 display: block;
                 margin-bottom: 20px;
 
-                @media (min-width: 768px) {
-                    display: inline-block;
+                @media (min-width:768px ) {
                     margin-right: 10px;
-
+                    display: inline-block;
+                }
             }
-
         }
 
         img {
@@ -233,11 +231,7 @@ header {
 
             @media (min-width: 1200px) {
                 display: block;
-                
             }
-
         }
-
     }
-
 }
