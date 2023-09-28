@@ -340,6 +340,11 @@ header .container .menu .main-menu .btn-login {
   bottom: 50px;
   right: 0;
 }
+.newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .newsletter .container h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
