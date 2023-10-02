@@ -271,6 +271,92 @@ header .container .menu .main-menu .btn-login {
   }
 }
 
+.logos .container {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .logos .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 72px;
+    padding-right: 50px;
+  }
+}
+
+.features {
+  padding-bottom: 120px;
+}
+.features .container {
+  display: grid;
+  text-align: left;
+  grid-template-columns: 3fr 5fr;
+  gap: 30px;
+  border: 2px solid #DAD9D3;
+  padding-top: 80px;
+  padding-bottom: 32px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "DM Sans", sans-serif;
+}
+.features .container .section-title2 p {
+  color: #F94D1C;
+}
+.features .container .section-title2 h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 48px;
+}
+.features .container .section-title2 .btn-yellow-long {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 56px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 48px;
+}
+.features .container .section-title2 .btn-yellow-long i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.features .container .section-title2 .btn-yellow-long:hover {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+.features .container .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  text-align: left;
+  text-decoration: none;
+  gap: 30px;
+  color: #191919;
+  padding-left: 103px;
+}
+@media (min-width: 768px) {
+  .features .container .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .features {
+    margin-top: 80px;
+  }
+}
+
 .project-and-case .container {
   display: flex;
   flex-direction: column;
