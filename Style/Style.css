@@ -23,27 +23,7 @@ html, body {
 }
 .btn-yellow:hover {
   background-color: #191919;
-  border: #191919;
-  color: #F0EFE9;
-}
-
-.btn-transparent {
-  background-color: transparent;
   border: 1px solid #191919;
-  color: #191919;
-  text-decoration: none;
-  padding: 12px 30px;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 25px;
-}
-.btn-transparent i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-.btn-transparent:hover {
-  background-color: #191919;
-  border: #191919;
   color: #F0EFE9;
 }
 
@@ -67,9 +47,29 @@ html, body {
   color: #191919;
 }
 
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-transparent i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
 .section-title {
   padding-top: 70px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) {
   .section-title {
@@ -281,6 +281,7 @@ header .container .menu .main-menu .btn-login {
     align-items: center;
     margin-top: 72px;
     padding-right: 50px;
+    margin-bottom: 80px;
   }
 }
 
@@ -288,18 +289,17 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 120px;
 }
 .features .container {
-  display: grid;
+  font-family: "DM Sans", sans-serif;
   text-align: left;
+  display: grid;
   grid-template-columns: 3fr 5fr;
   gap: 30px;
-  border: 2px solid #DAD9D3;
   padding-top: 80px;
   padding-bottom: 32px;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: "DM Sans", sans-serif;
+  outline: 2px solid #DAD9D3;
+  outline-offset: 2rem;
 }
-.features .container .section-title2 p {
+.features .container .section-title2 {
   color: #F94D1C;
 }
 .features .container .section-title2 h2 {
@@ -307,61 +307,177 @@ header .container .menu .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 }
-.features .container .section-title2 .btn-yellow-long {
+.features .container .btn-yellow-long {
   background-color: #F9D783;
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 15px 56px;
-  text-align: center;
-  width: 100%;
+  padding: 15px;
   display: block;
+  text-align: center;
   font-weight: 600;
   font-size: 16px;
   border-radius: 48px;
 }
-.features .container .section-title2 .btn-yellow-long i {
+.features .container .btn-yellow-long i {
   margin-left: 8px;
   font-size: 0.9em;
 }
-.features .container .section-title2 .btn-yellow-long:hover {
-  background-color: transparent;
+.features .container .btn-yellow-long:hover {
+  background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
 }
-.features .container .content {
+@media (max-width: 768px) {
+  .features .container {
+    margin-left: 100px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+.features .content {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  text-align: left;
-  text-decoration: none;
-  gap: 30px;
   color: #191919;
+  text-decoration: none;
+  text-align: left;
   padding-left: 103px;
+  gap: 30px;
 }
 @media (min-width: 768px) {
-  .features .container .content {
+  .features .content {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 768px) {
-  .features {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .features .content {
+    padding-top: 40px;
+    margin-right: 110px;
+    text-align: center;
   }
 }
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .features {
     margin-top: 80px;
   }
 }
 
-.project-and-case .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.company .container {
+  position: relative;
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  justify-items: start;
 }
+.company .container .founder {
+  position: relative;
+}
+.company .container .founder .founder-pic {
+  position: relative;
+  z-index: -1;
+}
+.company .container .founder .wavy-lines {
+  position: absolute;
+  width: 35%;
+  top: 60px;
+  left: 0px;
+}
+.company .container .founder h2 {
+  position: absolute;
+  top: 400px;
+  left: -25px;
+  font-size: 22px;
+  z-index: 1;
+  color: #191919;
+  font-weight: 700;
+}
+.company .container .founder h3 {
+  position: absolute;
+  top: 404px;
+  right: 270px;
+  color: #F94D1C;
+  font-size: 18px;
+  z-index: 1;
+  font-weight: 700;
+}
+.company .container .founder p {
+  position: absolute;
+  top: 440px;
+  left: -25px;
+  z-index: 1;
+  color: #191919;
+  width: 300px;
+  font-weight: 500;
+}
+.company .container .founder .founder-box {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -200px;
+  height: 160px;
+  width: 325px;
+  background-color: #BEEBFF;
+  z-index: 0;
+}
+.company .container .content {
+  display: inline-block;
+  position: absolute;
+  padding-left: 500px;
+  margin-left: 200px;
+  padding-right: 150px;
+  top: -125px;
+  color: #191919;
+  text-decoration: none;
+  text-align: left;
+}
+.company .container .content .section-title3 {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .company .container .content .section-title3 {
+    padding-top: 120px;
+  }
+}
+.company .container .content .section-title3 p {
+  color: #F94D1C;
+  margin-bottom: 10px;
+}
+.company .container .content .section-title3 h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+.company .container .content .btns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.company .container .content .btns .intro-video a {
+  color: #191919;
+  margin-right: 210px;
+  margin-top: -10px;
+  background-color: transparent;
+  border: 1px solid #191919;
+  text-decoration: none;
+  padding: 16px 22px;
+  border-radius: 50px;
+}
+.company .container .content .btns .intro-video a:hover {
+  color: #F0EFE9;
+  background-color: #191919;
+}
+.company .container .content .intro-video-text {
+  position: absolute;
+  right: 270px;
+  bottom: -14px;
+  font-weight: 500;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -400,7 +516,7 @@ header .container .menu .main-menu .btn-login {
   text-align: right;
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   color: #191919;
 }
@@ -415,34 +531,34 @@ header .container .menu .main-menu .btn-login {
   margin-bottom: 90px;
 }
 
-.newsletter {
+.Newsletter {
   background-color: #F0EFE9;
   position: relative;
-  padding-top: 80px;
+  padding: 80px;
   padding-bottom: 80px;
 }
-.newsletter .background-wavy-lines {
+.Newsletter .background-wavy-right {
   position: absolute;
   bottom: 50px;
   right: 0;
 }
-.newsletter .container {
+.Newsletter .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.newsletter .container h2 {
+.Newsletter .container h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
 }
-.newsletter .container form input {
+.Newsletter .container form input {
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 20px;
   font-size: 16px;
   border-radius: 25px;
   outline: none;
-  border: 1px solid rgba(25, 25, 25, 0.1);
+  border: 1px solid #DAD9D3;
   margin-right: 20px;
 }
