@@ -1093,7 +1093,7 @@ header .container .menu .main-menu .btn-login {
 }
 .Newsletter .background-wavy-right {
   position: absolute;
-  bottom: 50px;
+  bottom: 0px;
   right: 0;
 }
 .Newsletter .container {
